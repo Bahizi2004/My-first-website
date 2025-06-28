@@ -1,9 +1,62 @@
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 50px;
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1 {
-  color: #007BFF;
+
+body, html {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero section with background */
+.hero {
+  height: 100vh;
+  background-image: url('background.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Profile image */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0 auto 20px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: gold;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Content section */
+.content {
+  background-color: #f2f2f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.content h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
 }
