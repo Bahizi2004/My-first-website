@@ -5,6 +5,13 @@ body {
 }
 
 .hero {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
@@ -17,7 +24,7 @@ body {
   text-align: center;
   color: white;
   padding: 20px;
-  border: 5px solid red;
+  border: 5px solid gold;
 }
 
 .btn {
@@ -31,10 +38,21 @@ body {
   display: inline-block;
 }
 
-.profile-section {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: white;
+.profile-section {.top-right-pic {
+  position: absolute;
+  top: 20px;         /* distance from top */
+  right: 20px;       /* distance from right */
+  width: 100px;      /* optional: adjust size */
+  border-radius: 50%; /* optional: make it round */
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+  .top-right-pic {
+  transition: transform 0.3s;
+}
+
+.top-right-pic:hover {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .profile-pic {
